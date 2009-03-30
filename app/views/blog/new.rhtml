@@ -1,0 +1,35 @@
+<div class="sectionh2">
+<h2>新しいブログの作成</h2>
+
+<table>
+  <tbody>
+    <tr>
+<% form_tag :action => 'create' do %>
+      <th>タイトル</th>
+      <td><%= text_field :entry, :title %></td>
+    </tr>
+    <tr>
+      <th>本文</th>
+      <td><%= text_area :entry, :body %></td>
+    </tr>
+    <tr>
+      <th>ユーザ</th>
+      <td>
+        <% if session[:user_id] %>
+          <%= session[:user_name] %>
+        <% else %>
+          guestで書き込みます
+        <% end %>
+      </td>
+    </tr>
+    <tr>
+      <th>タグ</th>
+    </tr>
+  </tbody>
+</table>
+  <%= submit_tag "作成する" %>
+<% end %>
+
+<%= link_to '戻る', :action => 'list' %>
+
+</div>

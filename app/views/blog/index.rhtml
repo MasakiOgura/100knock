@@ -1,0 +1,43 @@
+        <div class="sectionh2">
+          <h2><span>最新のアイディア</span>(コメント募集中)</h2>
+
+          <table>
+            <tbody>
+              <tr>
+                <td class="author">投稿者</td>
+                <td class="title">タイトル</td>
+              </tr>
+<% for entry in @entries %>
+              <tr>
+                <th><%=h entry.user.name %></th>
+                <th><%= link_to((entry.title), :action => 'show', :id => entry)  %></th>
+              </tr>
+<% end %>
+            </tbody>
+          </table>
+        </div><!-- sectionh2 -->
+
+        <div class="sectionh2 left">
+          <h2><span>先月盛況なアイディア</span></h2>
+          <table>
+            <tbody>
+              <tr>
+                <th class="author">田中</th>
+                <th class="title">今日のアイディア</th>
+                <th>(100)</th>
+              </tr>
+              <tr>
+                <th>山田</th>
+                <th>やまいも・・・・</th>
+                <th>(200)</th>
+              </tr>
+            </tbody>
+          </table>
+
+        </div><!-- sectionh2 -->
+
+        <div class="sectionh2 right">
+aaa
+        </div><!-- sectionh2 -->
+
+

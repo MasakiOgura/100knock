@@ -1,0 +1,16 @@
+<%= error_messages_for 'entry' %>
+
+<!--[form:entry]-->
+<p><label for="entry_title">Title</label><br/>
+<%= text_field 'entry', 'title'  %></p>
+
+<p><label for="entry_body">Body</label><br/>
+<%= text_area 'entry', 'body'  %></p>
+
+<p><label for="entry_created_at">Created at</label><br/>
+<%= datetime_select 'entry', 'created_at'  %></p>
+
+<p><label for="entry_updated_at">Updated at</label><br/>
+<%= datetime_select 'entry', 'updated_at'  %></p>
+<!--[eoform:entry]-->
+

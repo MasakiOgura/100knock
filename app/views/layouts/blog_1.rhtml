@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>100本ノック</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="author" content="lifesound" />
+<meta name="copyright" content="lifesound" />
+<meta name="ROBOTS" content="ALL" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rev="made" href="http://www.lsinc.co.jp/" />
+<link rel="start contents" href="http://www.lsinc.co.jp/" />
+<link rel="stylesheet" type="text/css" href="importSec.css" />
+<link href="" title="Recent Entries" type="application/atom+xml" rel="alternate" />
+<link href="" title="RSD" type="application/rsd+xml" rel="EditURI" />
+<script type="text/javascript" src="http://www.lsinc.co.jp/js/jquery.js"></script>
+<script type="text/javascript" src="http://www.lsinc.co.jp/js/swapImg.js"></script>
+<script type="text/jacascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA4Tb8_pHuJCZ5wJITgOBrAhQy4xw133HpnL3pvf_TLWpj_L8spRQuOFNw9E4OLuYWgzckps7xeRcOnw"></script>
+</head>
+<body>
+<%= link_to 'ログイン', { :controller => "login", :action => "login"} if !session[:user_id] %>
+<% if session[:user_id] %>
+  <%= link_to 'ログアウト', { :controller => "login", :action => "logout" }, { :method => 'post', :confirm => '本当にログアウトしますか？'}  %>
+  <%= "ようこそ #{session[:user_name]}" %>
+<% end %>
+<p style="color: green"><%= flash[:notice] %></p>
+
+<%= yield  %>
+
+</body>
+</html>

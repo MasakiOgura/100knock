@@ -1,0 +1,21 @@
+<%#= error_message_for 'user' %>
+
+<fieldset>
+  <legend>ログインしてください</legend>
+
+  <% form_tag do %>
+    <p>
+      <label for="name">名前:</label>
+      <%= text_field_tag :name, params[:name] %>
+    </p>
+
+    <p>
+      <label for="password">パスワード:</label>
+      <%= password_field_tag :password, params[:password] %>
+    </p>
+
+    <p>
+      <%= submit_tag "ログイン" %>
+    </p>
+  <% end %>
+</fieldset>

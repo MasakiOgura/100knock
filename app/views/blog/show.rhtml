@@ -1,0 +1,9 @@
+<div class="sectionh2">
+<h2><span><%=h @entry.title %></span></h2>
+<p>
+  <%=h @entry.body %>
+</p>
+
+<%= link_to 'Edit', :action => 'edit', :id => @entry %> |
+<%= link_to 'Back', :action => 'list' %>
+</div>

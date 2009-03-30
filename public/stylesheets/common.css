@@ -1,0 +1,320 @@
+﻿@charset "Shift_JIS";
+/***********************************************/
+/* HTML tag styles                             */
+/***********************************************/
+
+/***************************** 
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {  
+    margin:0; 
+    padding:0; 
+} 
+table { 
+    border-collapse:collapse; 
+    border-spacing:0; 
+} 
+fieldset,img {  
+    border:0; 
+} 
+address,caption,cite,code,dfn,em,strong,th,var { 
+    font-style:normal; 
+    font-weight:normal; 
+} 
+ol,ul { 
+    list-style:none; 
+} 
+caption,th { 
+    text-align:left; 
+} 
+h1,h2,h3,h4,h5,h6 { 
+    font-size:100%; 
+    font-weight:normal; 
+} 
+q:before,q:after { 
+    content:''; 
+} 
+abbr,acronym { border:0; 
+}
+
+******************************/
+
+/** reset **/
+body{
+margin:0 auto;
+padding:0;
+text-align:center}
+
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fildset,input,textarea,p,blockquote,table,th,td,address{
+margin:0;
+padding:0;
+color:#666;
+font-style:normal;
+font:small/140% verdana, "ヒラギノ丸ゴ Pro W4",ヒラギノ丸ゴ Pro W4, Hiragino Maru Gothic Pro, "ＭＳ Ｐゴシック",  Osaka, sans-serif}
+
+*html body div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fildset,input,textarea,p,blockquote,table,th,td,address{
+font:x-small/160% verdana, "ヒラギノ丸ゴ Pro W4",ヒラギノ丸ゴ Pro W4, Hiragino Maru Gothic Pro, "ＭＳ Ｐゴシック", Osaka, sans-serif}
+
+*+html body div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fildset,input,textarea,p,blockquote,table,th,td,address{
+font:small/140% verdana, "ヒラギノ丸ゴ Pro W4",ヒラギノ丸ゴ Pro W4, Hiragino Maru Gothic Pro, "ＭＳ Ｐゴシック", Osaka, sans-serif}
+
+;;body div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fildset,input,textarea,p,blockquote,table,th,td,address{
+font:small/140% verdana, "ヒラギノ丸ゴ Pro W4",ヒラギノ丸ゴ Pro W4, Hiragino Maru Gothic Pro, "ＭＳ Ｐゴシック", Osaka, sans-serif}
+
+table{
+border-collapse:collapse;
+border-spacing:0}
+
+textarea,input{margin:0;padding:0}
+
+caption,th{text-align:left}
+td,th{vertical-align: top}
+
+fieldset,img,abbr{border:none}
+li{list-style-type:none}
+hr{display:none}
+
+a,a:link{color:#9c5200}
+a:visited{color:#9c5200}
+a:hover{color:#9c5200;text-decoration:none}
+strong{font-weight:bold}
+
+/***********************************************/
+/* layout divs                                 */
+/***********************************************/
+
+/* #wrapper{background:url(../img/common/gNavBg.jpg) no-repeat 50% 76px} */
+
+#head{
+height:120px;
+margin:0 auto;
+text-align:left;
+position:relative;
+width:820px}
+
+#contwrap{
+margin:0 auto 20px;
+padding:115px 0 0;
+text-align:center;
+width:820px}
+
+#cont{
+margin:-115px auto 20px;
+padding:0 0 8px;
+width:820px}
+
+#cont:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden}
+
+#cont{display:inline-block;}
+
+/*\*/
+*html #cont{height:1%}
+#cont{display:block}
+/**/
+
+#main{
+float:left;
+margin:0 20px 0 0;
+text-align:left;
+width:580px}
+
+#sidebar{
+float:right;
+padding:0 10px;
+text-align:left;
+width:200px;
+_width:220px}
+
+#foot{
+background:url(../img/common/footBg.gif) repeat-x #0c0807;
+text-align:center}
+
+/***********************************************/
+/* #head style                                 */
+/***********************************************/
+
+#head h1{
+position:absolute;
+top:12px;
+left:2px}
+
+#head .gnav:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden}
+
+#head .gnav{display:inline-block;}
+
+/*\*/
+*html #head .gnav{height:1%}
+#head .gnav{display:block}
+/**/
+
+#head .gnav{
+position:absolute;
+top:78px;
+left:0}
+
+#head .gnav li{float:left}
+
+#head div{
+position:absolute;
+top:112px;
+left:0}
+
+#head .search {
+position: absolute;
+top: 12px;
+left: 610px;
+}
+
+#head .count {
+top: 23px;
+left: 330px;
+}
+
+#head .login {
+top: 12px;
+left: 650px;
+}
+
+/***********************************************/
+/* #main style                                 */
+/***********************************************/
+
+
+#cont .topicpath{
+margin:0 0 20px;
+text-align:right}
+
+#cont .topicpath li{
+background:url(../images/common/icon02.gif) no-repeat 0 4px;
+color:#333;
+display:inline;
+font-size:x-small;
+_font-size:xx-small;
+margin:0 5px 0 0;
+padding:0 0 0 8px}
+
+#cont .topicpath li a{
+font-size:x-small;
+_font-size:xx-small}
+
+#cont .topicpath li.firstchild{
+background:none;
+padding:0}
+
+
+
+/***********************************************/
+/* #sideBar style                              */
+/***********************************************/
+
+#sidebar .sectionh2.firstchild{
+margin:0 -10px;
+padding:10px 10px 0}
+
+#sidebar .sectionh2 h2{
+background:#884050;
+color:#fff;
+font-size:medium;
+_font-size:small;
+padding:10px 10px 5px}
+
+#sidebar .sectionh2 .eng{
+background:#753d00;
+color:#fff;
+font-size:70%;
+margin:0 0 10px;
+padding:5px 10px;
+text-transform:uppercase}
+
+#sidebar .sectionh2 ul li{
+margin:0 0 0px;
+padding:0 8px 2px}
+
+#sidebar .sectionh2 ul{margin:10px 0 10px}
+
+#sidebar dl dt{margin:0 0 8px}
+
+#sidebar dl dd{margin:0 0 2px}
+
+#sidebar dl dd.note{
+background:url(../img/common/ddBorder.gif) repeat-x 0 100%;
+font-size:x-small;
+_font-size:xx-small;
+padding:0 0 8px}
+
+#sidebar dl dt {
+margin:0 0 8px;
+}
+
+#sidebar .sectionh2 ul li dd {
+background:transparent url(../img/common/icon03.gif) no-repeat scroll 0 6px;
+padding:0 0 8px 10px;
+}
+
+/***********************************************/
+/* #foot style                                 */
+/***********************************************/
+
+#foot .footcont{
+margin:0 auto;
+text-align:left;
+padding:10px 0 15px;
+width:820px}
+
+#foot .footcont ul:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden}
+
+#foot .footcont ul{display:inline-block;}
+
+/*\*/
+*html #foot .footcont ul{height:1%}
+#foot .footcont ul{display:block}
+/**/
+
+#foot .footcont ul li{
+font-size:1%;
+float:left}
+
+#foot .footcont ul{margin:0 0 40px}
+
+#foot .footcont p{
+border-right:1px solid #757372;
+font-size:x-small;
+_font-size:xx-small;
+padding:5px 5px 0 0;
+width:550px;
+_width:556px}
+
+#foot .footcont div{
+margin:-60px 0 10px;
+text-align:right}
+
+#foot .footcont address{
+color:#8d8b8a;
+font-size:60%;
+text-align:right;
+text-transform:uppercase}
+
+
+/* for IE6 */
+* html li dl {
+  display: inline;
+}
+
+/* for IE7 */
+*:first-child+html li dl {
+  display: inline;
+}

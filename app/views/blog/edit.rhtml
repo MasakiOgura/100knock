@@ -1,0 +1,24 @@
+<div class="sectionh2">
+<h2><%=h @entry.title %></h2>
+
+<table>
+  <tbody>
+    <tr>
+<% form_tag :action => 'update', :id => @entry do %>
+      <th>タイトル</th>
+      <td><%= text_field :entry, :title %></td>
+    </tr>
+    <tr>
+      <th>本文</th>
+      <td><%= text_area :entry, :body %></td>
+    </tr>
+  </tbody>
+</table>
+<%= submit_tag "作成する" %>
+
+<% end %>
+
+<%= link_to 'このブログを削除', {:action => 'destroy', :id => @entry},
+  {:method => :post, :confirm =>'このブログを削除していいですか？'} %> |
+<%= link_to 'Topへ戻る', :action => 'index' %>
+</div>

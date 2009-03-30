@@ -1,0 +1,15 @@
+<h1>管理者</h1>
+<ul>
+  <% for user in @all_users %>
+    <li><%= link_to "[X]", { #link_to options
+                              :controller => 'login',
+                              :action => 'delete_user',
+                              :id => user},
+                            { #html options
+                              :method => :post,
+                              :confirm => "本当に#{user.name}削除してもいい?"
+                            } %>
+        <%= h(user.name) %>
+    </li>
+  <% end %>
+</ul>

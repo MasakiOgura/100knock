@@ -1,0 +1,18 @@
+<div class="sectionh2">
+  <h2>ログインしてください</h2>
+  <table>
+    <tbody>
+      <% form_tag do %>
+      <tr>
+        <th>名前:</th>
+        <td><%= text_field_tag :name, params[:name] %></td>
+      </tr>
+      <tr>
+        <th>パスワード:</th>
+        <td><%= password_field_tag :password, params[:password] %></td>
+      </tr>
+    </tbody>
+  </table>
+  <%= submit_tag "ログイン" %>
+  <% end %>
+</div>

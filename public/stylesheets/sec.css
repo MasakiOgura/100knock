@@ -1,0 +1,770 @@
+﻿@charset "Shift_JIS";
+/***********************************************/
+/*sec.css                                      */
+/***********************************************/
+
+#main {
+}
+
+#main .sectionh2 h2 span{
+color:#FF1500;
+font-weight:bold;
+font-size:larger;
+_font-size:medium;
+padding:10px 20px}
+
+#main .sectionh2 h2{
+background:url(../images/common/icon01.jpg) repeat-y 0% 0;
+padding:10px 10px;
+}
+
+#main .sectionh2 table {
+border:1px dotted #d2d2d2;
+margin: 15px 10px;
+}
+
+#main .sectionh2 .author {
+width:100px;
+}
+
+#main .sectionh2 .title {
+width:500px;
+}
+
+#main .sectionh2 table th {
+padding: 3px 5px 3px;
+}
+
+#main .sectionh2 table td{
+padding: 3px 5px 3px;
+}
+
+#main .sectionh2.left {
+float: left;
+width: 290px;
+}
+
+#main .sectionh2.left .author {
+width: 50px;
+}
+
+#main .sectionh2.left .title {
+width: 230px;
+}
+
+#main .sectionh2.right {
+float: right;
+width: 290px;
+}
+
+#main .sectionh2 ul {
+border:1px dotted #d2d2d2;
+margin: 15px 10px;
+}
+
+#main .sectionh2 ul li{
+margin: 0px 5px 10px;
+}
+
+/* news
+**************************************************/
+
+#news #cont{background:url(../img/news/contBg.jpg) no-repeat 100% 0}
+
+#news #sidebar .sectionh2.firstchild{background:url(../img/news/sideBgTop.gif) no-repeat}
+
+#news #main .sectionh2 ul li{
+border-bottom:1px dotted #999;
+margin:0 0 10px;
+letter-spacing:-1px;
+padding:0 0 10px}
+
+#news #main .sectionh2 ul li span{
+margin:0 20px 0 0}
+
+#news #main .sectionh3{
+margin:0 0 10px;
+padding:10px 10px 0}
+
+#news #main .sectionh3 h3{
+color:#9c5200;
+font-size:larger;
+_font-size:medium;
+font-weight:bold;
+margin:0 0 10px}
+
+#news #main .sectionh3 p{margin:0 0 15px}
+
+#news #main .sectionh3:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden}
+
+#news #main .sectionh3{display:inline-block;}
+
+/*\*/
+*html #news #main .sectionh3{height:1%}
+#news #main .sectionh3{display:block}
+/**/
+
+#news #main .sectionh3 .lead{
+float:left;
+width:360px}
+
+#news #main .sectionh3 .photo{
+float:right;
+width:210px}
+
+#news #main .sectionh3.note{
+border:none;
+padding:0}
+
+#news #main .sectionh3.note h3{
+background:url(../img/common/h3Bg.jpg) no-repeat 0 50%;
+color:#fff;
+font-size:small;
+_font-size:x-small;
+padding:10px}
+
+#news #main .sectionh3.note ul li{
+background:url(../img/work/icon02.gif) no-repeat 0 5px;
+margin:0 0 10px;
+padding:0 0 0 15px}
+
+#news #main .sectionh2 .link{
+margin:0 0 10px;
+text-align:right}
+
+#news #main .sectionh2 .link a{
+background:url(../img/news/icon01.gif) no-repeat 0 7px;
+padding:0 0 0 15px}
+
+#news #main .date {
+text-align: right;
+padding-right: 25px}
+
+#news #main .sectionh2 p{margin:0 0 30px}
+
+
+/* adopt
+**************************************************/
+
+#adopt #cont{background:url(../img/adopt/contBg.jpg) no-repeat 100% 0}
+
+#adopt #sidebar .sectionh2.firstchild{background:url(../img/adopt/sideBgTop.gif) no-repeat}
+
+#adopt #main .sectionh2 div{margin:0 0 20px}
+
+#adopt #main .sectionh2 .btn{
+margin:0 0 30px;
+text-align:center}
+
+#adopt #main .sectionh2 p{margin:0 0 30px}
+
+#adopt #main .sectionh2 table{
+margin:0 0 30px;
+width:100%}
+
+#adopt #main .sectionh2 table th{
+background:#eee;
+border:1px solid #aaa;
+border-right:none;
+text-align:center;
+vertical-align:middle;
+width:90px}
+
+#adopt #main .sectionh2 table td{
+border:1px solid #aaa;
+border-left:none;
+color:#333;
+padding:5px}
+
+#adopt #main .sectionh2 table td ul li{color:#333}
+
+
+
+/* work
+**************************************************/
+
+#work #cont{background:url(../img/work/contBg.jpg) no-repeat 100% 0}
+
+#work #sidebar .sectionh2.firstchild{background:url(../img/work/sideBgTop.gif) no-repeat}
+
+#work #main .sectionh2 dl dt{
+background:url(../img/work/icon01.gif) no-repeat 0 4px;
+font-weight:bold;
+margin:0 0 15px;
+padding:0 0 0 15px}
+
+#work #main .sectionh2 dl dd{margin:0 0 20px}
+
+#work #main .sectionh2 dl dd ul:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden}
+
+#work #main .sectionh2 dl dd ul{display:inline-block;}
+
+/*\*/
+*html #work #main .sectionh2 dl dd ul{height:1%}
+#work #main .sectionh2 dl dd ul{display:block}
+/**/
+
+#work #main .sectionh2 dl dd ul li{
+float:left;
+margin:0 8px 5px 0}
+
+#work #main .sectionh2 dl dd ul li.note{margin:0 0 5px}
+
+#work #main .sectionh2 dl dd ul li a{font-size:1%}
+
+#work #main .sectionh3{
+margin:0 0 10px;
+padding:20px 0 0}
+
+#work #main .sectionh3 h3{
+color:#9c5200;
+font-size:larger;
+_font-size:medium;
+font-weight:bold;
+margin:0 0 10px}
+
+#work #main .sectionh3 p{margin:0 0 15px}
+
+#work #main .sectionh3:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden}
+
+#work #main .sectionh3{display:inline-block;}
+
+/*\*/
+*html #work #main .sectionh3{height:1%}
+#work #main .sectionh3{display:block}
+/**/
+
+#work #main .sectionh3 .lead{
+float:left;
+width:360px}
+
+#work #main .sectionh3 .photo{
+float:right;
+width:210px}
+
+#work #main .sectionh3.note{
+border:none;
+padding:0}
+
+#work #main .sectionh3.note h3{
+background:url(../img/common/h3Bg.jpg) no-repeat 0 50%;
+color:#fff;
+font-size:small;
+_font-size:x-small;
+padding:10px}
+
+#work #main .sectionh3.note ul li{
+background:url(../img/work/icon02.gif) no-repeat 0 5px;
+margin:0 0 10px;
+padding:0 0 0 15px}
+
+#work #main .sectionh2 .link{
+margin:0 0 10px;
+text-align:right}
+
+#work #main .sectionh2 .link a{
+background:url(../img/index/icon01.gif) no-repeat 0 7px;
+padding:0 0 0 15px}
+
+#work #main .sectionh2 table td ul li{color:#333}
+
+#work #main .h202 .sectionh3 table{
+margin:0 0 30px;
+width:100%}
+
+#work #main .h202 .sectionh3 table th{
+background:#eee;
+border:1px solid #aaa;
+padding:5px;
+vertical-align:middle;
+width:125px}
+
+#work #main .h202 .sectionh3 table td{
+border:1px solid #aaa;
+color:#333;
+padding:5px}
+
+#work #main .h202 .sectionh3 table td ul li{color:#333}
+
+#work #main .sectionh2 table{
+margin:0 0 30px;
+width:100%}
+
+#work #main .sectionh2.h204 table th{
+background: none repeat scroll 0 0;
+border-bottom:1px solid #e3e3e3;
+padding:5px 15px 5px 0;
+z-index:2}
+
+#work #main .sectionh2.h204 table td{
+border-bottom:1px solid #e3e3e3;
+padding:5px 0 0}
+
+#work #main .h204 table td dl dt{
+font-size:100%;
+font-weight:bold;
+margin:0 0 10px}
+
+#work #main .h204 table td dl dd{
+border:none;
+padding:0}
+
+#work #main .sectionh2 span.pagePrev{
+text-align: left;
+}
+
+#work #main .sectionh2 span.pageNext{
+margin-left: 20px;
+}
+
+#work #main .sectionh2 .pageNate {
+font-size:75%;
+position:relative;
+right:-350px;
+text-align:right;
+width:225px;
+z-index:30;
+}
+
+#work #main .sectionh2 .pageNateNum {
+font-size:100%;
+position:relative;
+right:-350px;
+top:-10px;
+text-align:right;
+width:225px;
+z-index:30;
+}
+
+#work #main .sectionh2 .pageTop{
+text-align: right;
+}
+
+/* index
+******************************************************/
+
+body#index{background:url(../img/index/bodyBg2.jpg) repeat-x}
+
+#index #main{
+position:relative;
+z-index:1}
+
+#index #head{height:371px}
+
+#index #cont{background:url(../img/index/contBg.jpg) no-repeat 100% 0}
+
+#index #sidebar dl{
+background:url(../img/index/sideBgTop.gif) no-repeat;
+margin:0 -10px;
+padding:10px 10px 0}
+
+#index #cont{
+margin:-115px auto 20px;
+padding-top:40px}
+
+#index #main .sectionh2 h2{
+background:none;
+border:none;
+margin:0 0 5px;
+padding:0}
+
+#index #main .sectionh2 .link{
+margin:0 0 10px;
+text-align:right}
+
+#index #main .sectionh2 .link a{
+background:url(../img/index/icon01.gif) no-repeat 0 7px;
+padding:0 0 0 15px}
+
+#index #main .sectionh2 dl dt{
+font-size:70%;
+margin:0 0 3px}
+
+#index #main .sectionh2 dl dd{
+border-bottom:1px solid #e3e3e3;
+margin:0 0 10px;
+padding:0 0 10px}
+
+#index #main .h202 table{
+margin:0 0 10px -4px;
+width:580px}
+
+#index #main .h202 table th{
+border-bottom:1px solid #e3e3e3;
+padding:5px 15px 5px 0;
+z-index:2}
+
+#index #main .h202 table td{
+border-bottom:1px solid #e3e3e3;
+padding:5px 0 0}
+
+#index #main .h202 table td dl dt{
+font-size:100%;
+font-weight:bold;
+margin:0 0 10px}
+
+#index #main .h202 table td dl dd{
+border:none;
+padding:0}
+
+#index #main .h203 table td{padding:0 0 20px}
+
+#index #main .h203 table td.note{padding:0 20px 20px 0}
+
+/* outline
+**************************************************/
+
+#outline #cont{background:url(../img/outline/contBg.jpg) no-repeat 100% 0}
+
+#outline #sidebar .sectionh2.firstchild{background:url(../img/outline/sideBgTop.gif) no-repeat}
+
+#outline #main .sectionh2 dl dt{
+background:url(../img/outline/icon01.gif) no-repeat 0 4px;
+font-weight:bold;
+margin:0 0 15px;
+padding:0 0 0 15px}
+
+#outline #main .sectionh2 dl dd{margin:0 0 20px}
+
+#outline #main .sectionh2 dl dd ul:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden}
+
+#outline #main .sectionh2 dl dd ul{display:inline-block;}
+
+/*\*/
+*html #outline #main .sectionh2 dl dd ul{height:1%}
+#outline #main .sectionh2 dl dd ul{display:block}
+/**/
+
+#outline #main .sectionh2 dl dd ul li{
+float:left;
+margin:0 8px 5px 0}
+
+#outline #main .sectionh2 dl dd ul li.note{margin:0 0 5px}
+
+#outline #main .sectionh2 dl dd ul li a{font-size:1%}
+
+#outline #main .sectionh3{
+margin:0 0 10px;
+padding:20px 0 0}
+
+#outline #main .sectionh3 h3{
+color:#9c5200;
+font-size:larger;
+_font-size:medium;
+font-weight:bold;
+margin:0 0 10px}
+
+#outline #main .sectionh3 p{margin:0 0 15px}
+
+#outline #main .sectionh3:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden}
+
+#outline #main .sectionh3{display:inline-block;}
+
+/*\*/
+*html #outline #main .sectionh3{height:1%}
+#outline #main .sectionh3{display:block}
+/**/
+
+#outline #main .sectionh3 .lead{
+float:left;
+width:360px}
+
+#outline #main .sectionh3 .photo{
+float:right;
+width:210px}
+
+#outline #main .sectionh3.note{
+border:none;
+padding:0}
+
+#outline #main .sectionh3.note h3{
+background:url(../img/common/h3Bg.jpg) no-repeat 0 50%;
+color:#fff;
+font-size:small;
+_font-size:x-small;
+padding:10px}
+
+#outline #main .sectionh3.note ul li{
+background:url(../img/outline/icon02.gif) no-repeat 0 5px;
+margin:0 0 10px;
+padding:0 0 0 15px}
+
+#outline #main .sectionh2 .link{
+margin:0 0 10px;
+text-align:right}
+
+#outline #main .sectionh2 .link a{
+background:url(../img/index/icon01.gif) no-repeat 0 7px;
+padding:0 0 0 15px}
+
+#outline #main .sectionh2 table td ul li{color:#333}
+
+#outline #main .h202 table{
+margin:0 0 10px -4px;
+width:580px;
+padding-left: 30px}
+
+#outline #main .h202 table th{
+border-bottom:1px solid #e3e3e3;
+padding:5px 15px 0 0;
+position:relative;
+z-index:2}
+
+#outline #main .h202 table td{
+border-bottom:1px solid #e3e3e3;
+padding:5px 0 0}
+
+#outline #main .h202 table td dl dt{
+font-size:100%;
+font-weight:bold;
+margin:0 0 10px}
+
+#outline #main .h202 table td dl dd{
+border:none;
+padding:0}
+
+#outline .sectionh2 .h202 h2 span{
+background:url(../img/common/h2border.jpg) no-repeat 0 50%;
+color:#333;
+font-weight:bold;
+font-size:larger;
+_font-size:medium;
+padding:10px 20px}
+
+#outline #main .sectionh2 ul li{
+border-bottom:1px dotted #999;
+margin:0 0 10px;
+letter-spacing:-1px;
+padding:0 0 10px}
+
+#outline #main .sectionh2 ul li span{
+margin:0 20px 0 0}
+
+#outline #main .sectionh2 table{
+margin:0 0 30px;
+width:100%}
+
+#outline #main .sectionh2 table th{
+background:#eee;
+border:1px solid #aaa;
+border-right:none;
+text-align:center;
+vertical-align:middle;
+width:90px}
+
+#outline #main .sectionh2 table td{
+border:1px solid #aaa;
+border-left:none;
+color:#333;
+padding:5px}
+
+#outline #main .sectionh2 table td ul li{color:#333}
+
+/* service
+**************************************************/
+
+#service #cont{background:url(../img/service/contBg.jpg) no-repeat 100% 0}
+
+#service #sidebar .sectionh2.firstchild{background:url(../img/service/sideBgTop.gif) no-repeat}
+
+#service #main .sectionh2 div{margin:0 0 20px}
+
+#service #main .sectionh2 .btn{
+margin:0 0 30px;
+text-align:center}
+
+#service #main .sectionh2 p{margin:0 0 30px}
+
+#service #main .sectionh2 table{
+margin:0 0 30px;
+width:100%}
+
+#service #main .sectionh2 table th{
+background:#eee;
+border:1px solid #aaa;
+border-right:none;
+text-align:center;
+vertical-align:middle;
+width:90px}
+
+#service #main .sectionh2 table td{
+border:1px solid #aaa;
+border-left:none;
+color:#333;
+padding:5px}
+
+#service #main .sectionh2 table td ul li{color:#333}
+
+#service #main .sectionh3{
+margin:0 0 10px;
+padding:10px 10px 0}
+
+#service #main .sectionh3 h3{
+color:#9c5200;
+font-size:larger;
+_font-size:medium;
+font-weight:bold;
+margin:0 0 10px}
+
+#service #main .sectionh3 p{margin:0 0 15px}
+
+#service #main .sectionh3:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden}
+
+#service #main .sectionh3{display:inline-block;}
+
+/*\*/
+*html #service #main .sectionh3{height:1%}
+#service #main .sectionh3{display:block}
+/**/
+
+#service #main .sectionh3 .lead{
+float:left;
+width:360px}
+
+#service #main .sectionh3 .photo{
+float:right;
+width:210px}
+
+#service #main .sectionh3.note{
+border:none;
+padding:0}
+
+#service #main .sectionh3.note h3{
+background:url(../img/common/h3Bg.jpg) no-repeat 0 50%;
+color:#fff;
+font-size:small;
+_font-size:x-small;
+padding:10px}
+
+#service #main .sectionh3 ul li{
+background:url(../img/service/icon02.gif) no-repeat 0 5px;
+margin:0 0 10px;
+padding:0 0 0 15px}
+
+#service #main .sectionh2 .link{
+margin:0 0 10px;
+text-align:right}
+
+#service #main .sectionh2 .link a{
+background:url(../img/news/icon01.gif) no-repeat 0 7px;
+padding:0 0 0 15px}
+
+#service #main .sectionh2 table td ul li{color:#333}
+
+#service #main .h202 .sectionh3 table{
+margin:0 0 30px;
+width:100%}
+
+#service #main .h202 .sectionh3 table th{
+background:#eee;
+border:1px solid #aaa;
+padding:5px;
+vertical-align:middle;
+width:125px}
+
+#service #main .h202 .sectionh3 table td{
+border:1px solid #aaa;
+color:#333;
+padding:5px}
+
+#service #main .h202 .sectionh3 table td ul li{color:#333}
+
+#service #main .sectionh3.note ul li{
+background:url(../img/work/icon02.gif) no-repeat 0 5px;
+margin:0 0 10px;
+padding:0 0 0 15px}
+
+#sidebar .sectionh2 ul li ul.sub li {
+background:transparent url(../img/dummy.png) repeat scroll 0 0;
+border-bottom:1px dotted #FFFFFF;
+margin:0 8px;
+padding:0;
+}
+
+#sidebar .sectionh2 ul li ul.sub {
+margin:0;
+}
+
+/* contact
+**************************************************/
+
+#contact #cont{background:url(../img/contact/contBg.jpg) no-repeat 100% 0}
+
+#contact #sidebar .sectionh2.firstchild{background:url(../img/contact/sideBgTop.gif) no-repeat}
+
+#contact #main .sectionh2 div{margin:0 0 20px}
+
+#contact #main .sectionh2 .btn{
+margin:0 0 30px;
+text-align:center}
+
+#contact #main .sectionh2 p{margin:0 0 30px}
+
+#contact #main .sectionh2 table{
+margin:0 0 30px;
+width:100%}
+
+#contact #main .sectionh2 table th{
+background:#eee;
+border:1px solid #aaa;
+border-right:none;
+text-align:center;
+vertical-align:middle;
+width:90px}
+
+#contact #main .sectionh2 table td{
+border:1px solid #aaa;
+border-left:none;
+color:#333;
+padding:5px}
+
+#contact #main .sectionh2 table td ul li{color:#333}
+
+#contact #main .sectionh3{
+margin:0 0 10px;
+padding:10px 10px 0}
+
+#contact #main .sectionh3 h3{
+color:#9c5200;
+font-size:larger;
+_font-size:medium;
+font-weight:bold;
+margin:0 0 10px}
+
+#contact #main .sectionh2 .link{
+margin:0 0 10px;
+text-align:right}
+
+#contact #main .sectionh2 .link a{
+background:url(../img/news/icon01.gif) no-repeat 0 7px;
+padding:0 0 0 15px}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>100本ノック</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="author" content="lifesound" />
+<meta name="copyright" content="lifesound" />
+<meta name="ROBOTS" content="ALL" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<%= stylesheet_link_tag 'common', 'sec' %>
+
+<link href="" title="Recent Entries" type="application/atom+xml" rel="alternate" />
+<link href="" title="RSD" type="application/rsd+xml" rel="EditURI" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/swapImg.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="head">
+      <h1><a href="http://127.0.0.1:3000/blog/"><img src="/images/common/logo.jpg" alt="10000本ノック"></a></h1>
+      <div class="count">現在<a href="#">100</a>本目</div> <!-- カウンタ表示用 -->
+      <ul class="gnav">
+        <li><a href="#"><img src="xxx" alt="#" ></a></li>
+        <li><a href="#"><img src="xxx" alt="#" ></a></li>
+        <li><a href="#"><img src="xxx" alt="#" ></a></li>
+        <li><a href="#"><img src="xxx" alt="#" ></a></li>
+        <li><a href="#"><img src="xxx" alt="#" ></a></li>
+        <li><a href="#"><img src="xxx" alt="#" ></a></li>
+      </ul>
+      <div class="login">
+        ログインユーザ | <%= link_to 'ログイン', {:controller => 'login', :action => 'login'} %>
+      </div>
+    </div><!-- header -->
+
+    <div id="contwrap">
+      <div id="cont">
+        <div id="main">
+<%= yield :layout  %>
+		</div><!-- main -->
+
+
+        <div id="sidebar">
+          <div class="sectionh2">
+            <ul>
+              <li><%= link_to('ブログを書く', :action => 'new') %></li>
+            </ul>
+          </div>
+          <div class="sectionh2">
+            <h2>カテゴリ</h2>
+            <ul>
+              <li><a href="#">カテゴリ1</a></li>
+              <li><a href="#">カテゴリ</a></li>
+              <li><a href="#">カテオリ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- cont -->
+
+
+    </div><!-- contwrap -->
+
+  </div><!-- wrapper -->

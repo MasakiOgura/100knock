@@ -1,0 +1,34 @@
+<%= error_messages_for %>
+
+<fieldset>
+  <legend>ユーザ情報入力</legend>
+
+  <% form_for :user do |form| %>
+    <p>
+      <label>名前：</label>
+      <%= form.text_field :name, :size => 40 %>
+    </p>
+
+    <p>
+      <label>パスワード：</label>
+      <%= form.password_field :password, :size => 40 %>
+    </p>
+
+    <p>
+      <label>確認</label>
+      <%= form.password_field :password_confirmation, :size => 40%>
+    </p>
+
+    <p>
+      <label>プロフィール</label>
+      <%= form.text_field :profile, :size => 40 %>
+    </p>
+
+    <p>
+      <label>権限</label>
+      <%= select("user", "permission_id", Permission.find_all.collect {|i| [i.permission_name, i.permission_id]}) %>
+    </p>
+    
+    <%= submit_tag "ユーザ追加", :class => "submit" %>
+  <% end %>
+</fieldset>
